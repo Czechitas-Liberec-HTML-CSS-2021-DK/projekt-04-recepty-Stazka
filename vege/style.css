@@ -17,6 +17,10 @@ středně široké obrazovky:
 }
 */
 
+@font-face {
+    font-family: 'Source Sans Pro', 'Raleway', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Source+Sans+Pro&display=swap');
+}
 
 body {
     margin: 0;
@@ -37,3 +41,33 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.hlavni {
+    display: block;
+    flex-grow: 2;
+    background-image: url('images/salat.jpg');
+}
+
+h1 .velky {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.75rem;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
