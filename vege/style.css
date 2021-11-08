@@ -46,31 +46,25 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    
 }
 
 .salat {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+    display: block;
     min-height: 200px;
     background-image: url('images/salat.jpg');
-    flex: 100%;
+    background-size: cover;
     padding: 0.5rem;
 }
 
 .velky-nadpis {
     font-family: 'Raleway', sans-serif;
     font-size: 1.75rem;
-    
 }
 
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
+    
 }
 
 p {
@@ -79,31 +73,30 @@ p {
 }
 
 .chlebicek {
-background-image: url('images/chlebicek.jpg');
-min-height: 90px;
-padding: 0.5rem;
+    background-image: url('images/chlebicek.jpg');
+
 }
 
 .cizrna {
-background-image: url('images/cizrna.jpg');
-min-height: 90px;
-padding: 0.5rem;
+    background-image: url('images/cizrna.jpg');
+
 }
 
 .tacos {
-background-image: url('images/tacos.jpg');
-min-height: 90px;
-padding: 0.5rem;
+    background-image: url('images/tacos.jpg');
+
 }
 
 .burger {
-background-image: url('images/burger.jpg');
-min-height: 90px;
-padding: 0.5rem;
+    background-image: url('images/burger.jpg');
+
 }
 
-
-
+.chlebicek, .cizrna, .burger, .tacos {
+    background-size: cover;
+    min-height: 90px;
+    padding: 0.5rem;
+}
 
 
 
@@ -121,26 +114,53 @@ padding: 0.5rem;
         flex: 50%;
     }
 
+    .salat {
+        min-height: 250px;
+        padding: 1.25rem;
+        }
+
+    .chlebicek, .cizrna, .burger, .tacos {
+        min-height: 150px;
+        padding: 1.25rem;
+        }
+        
+    .velky-nadpis {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
 }
 
 
 @media (min-width: 860px) {
 
 
-    .container {
-        flex-direction: row;
-    }
+    .menu {
+        display: flex;
+    }  
 
     .salat {
         flex: 33.3%;
+        min-height: 400px;
     }
 
-    .prvni-sloupec {
-        flex: 33.3%;
+    .container {
+        flex: 66.6%;
+    }
+
+    .chlebicek, .cizrna, .burger, .tacos {
+        min-height: 200px;
+    }
+
+    .velky-nadpis {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
     }
     
-    .druhy-sloupec {
-        flex: 33.3%;
-    }
-
 }
