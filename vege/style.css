@@ -17,10 +17,15 @@ středně široké obrazovky:
 }
 */
 
+@font-face {
+    font-family: 'Source Sans Pro', 'Raleway', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Source+Sans+Pro&display=swap');
+}
 
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
 }
 
 .paticka {
@@ -37,3 +42,141 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.salat {
+    display: block;
+    min-height: 200px;
+    background-image: url('images/salat.jpg');
+    background-size: cover;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.velky-nadpis {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.75rem;
+    position: absolute;
+    bottom: 0rem;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;    
+    position: absolute;
+    bottom: 0rem;
+    left: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    position: absolute;
+    }
+
+.vlevo {
+    left: 1rem;
+}
+
+.vpravo {
+    right: 1rem;
+}
+
+
+.chlebicek {
+    background-image: url('images/chlebicek.jpg');
+
+}
+
+.cizrna {
+    background-image: url('images/cizrna.jpg');
+
+}
+
+.tacos {
+    background-image: url('images/tacos.jpg');
+
+}
+
+.burger {
+    background-image: url('images/burger.jpg');
+
+}
+
+.chlebicek, .cizrna, .burger, .tacos {
+    background-size: cover;
+    min-height: 90px;
+    padding: 0.5rem;
+    position: relative;
+}
+
+
+
+@media (min-width: 480px) {
+
+    .container {
+        flex-direction: row;
+    }
+
+    .prvni-sloupec {
+        flex: 50%;
+    }
+    
+    .druhy-sloupec {
+        flex: 50%;
+    }
+
+    .salat {
+        min-height: 250px;
+        padding: 1.25rem;
+        }
+
+    .chlebicek, .cizrna, .burger, .tacos {
+        min-height: 150px;
+        padding: 1.25rem;
+        }
+        
+    .velky-nadpis {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media (min-width: 860px) {
+
+
+    .menu {
+        display: flex;
+    }  
+
+    .salat {
+        flex: 33.3%;
+        min-height: 400px;
+    }
+
+    .container {
+        flex: 66.6%;
+    }
+
+    .chlebicek, .cizrna, .burger, .tacos {
+        min-height: 200px;
+    }
+
+    .velky-nadpis {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+}
